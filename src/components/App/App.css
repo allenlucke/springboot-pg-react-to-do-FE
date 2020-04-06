@@ -1,0 +1,59 @@
+.App {
+  text-align: center;
+}
+
+.App-header {
+  /* background-color: #222; */
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+/* @keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+} */
+
+.textField{
+  background-color: whitesmoke;
+}
+body{
+  /* background-image: url('./../../images/sky-1441936_1920.jpg'); */
+  font: arial;
+  color: black;
+  margin-left: 10rem;
+  margin-right: 10rem;
+}
+
+li{
+  display: inline-block;
+}
+.clickable{
+  cursor: pointer;
+}
+h1{
+  font-size: 2.5rem;
+}
+h2{
+  font-size: 1.9rem;
+}
+h3{
+  font-size: 1.6rem;
+}
+p{
+  font-size: 1.3rem;
+}
+Button {
+  height: 3.5rem;
+}
+.tableHead {
+  font-size: 40px;
+}
