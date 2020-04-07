@@ -38,10 +38,11 @@ class App extends Component {
       return(
           <TableBody key={index}>
               <TableRow>
-
-                  <TableCell>{item.task}</TableCell>
                   <TableCell>{item.completed}</TableCell>
-
+                  <TableCell>{item.task}</TableCell>
+                  <TableCell>{moment(item.assignedOn).format('LL')}</TableCell>
+                  <TableCell>{moment(item.dueBy).format('LL')}</TableCell>
+                  <TableCell>{moment(item.whenCompleted).format('LL')}</TableCell>
               </TableRow>
           </TableBody>
       )
@@ -54,8 +55,11 @@ class App extends Component {
           <Table>
               <TableHead className="tableHead">
                   <TableRow>
-                      <TableCell>Task</TableCell>
                       <TableCell>Completed</TableCell>
+                      <TableCell>Task</TableCell>
+                      <TableCell>Assigned On</TableCell>
+                      <TableCell>Due By</TableCell>
+                      <TableCell>Completed On</TableCell>
                   </TableRow>
               </TableHead>
                   {toDoList}
