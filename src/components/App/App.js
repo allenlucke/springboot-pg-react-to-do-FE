@@ -40,9 +40,9 @@ class App extends Component {
               <TableRow>
                   <TableCell>{item.completed}</TableCell>
                   <TableCell>{item.task}</TableCell>
-                  <TableCell>{moment(item.assignedOn).format('LL')}</TableCell>
-                  <TableCell>{moment(item.dueBy).format('LL')}</TableCell>
-                  <TableCell>{moment(item.whenCompleted).format('LL')}</TableCell>
+                  <TableCell>{moment(item.assigned_on).format('LL')}</TableCell>
+                  <TableCell>{moment(item.due_by).format('LL')}</TableCell>
+                  <TableCell>{moment(item.when_completed).format('LL')}</TableCell>
               </TableRow>
           </TableBody>
       )
